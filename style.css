@@ -1,0 +1,150 @@
+.html {
+    width: 100vw;
+}
+
+/* Hero Section*/
+.hero {
+    background-color: rgb(92, 194, 234);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.laptop {
+    float: left;
+    width: 500px;
+    height: 500px;
+}
+
+.hero-text {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight:bold
+}
+
+/* About Me Section */
+#profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.me {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+    margin: 50px 0;
+}
+
+.me h3{
+    color: rgb(23, 170, 223);
+}
+
+.me-text {
+    width: 500px;
+    text-align: center;
+}
+
+/* Skills */
+
+.skill-section {
+    padding: 30px 0;
+}
+.skill-section h3 {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(23, 170, 223);
+    text-align: center;
+    padding: 40px 0;
+}
+.skills {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    column-gap: 20px;
+}
+
+
+.skills h4 {
+    color: rgb(23, 170, 223);
+}
+
+.skill-one img {
+    width: 225px;
+}
+
+.skill-one h4 {
+    margin-top: -20px;
+}
+
+.skill-one {
+    margin-top: 5px;
+}
+
+.skill-two img {
+    width: 130px;
+}
+
+.skill-two {
+    padding-top: 40px;
+}
+
+.skill-three img {
+    width: 150px;
+}
+
+.skill-three {
+    padding-top: 30px;
+}
+
+/* Contact Section */
+.contact {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+    background-color: rgb(92, 194, 234);
+    padding: 50px ;
+}
+
+.contact h4 {
+    font-weight: normal;
+}
+.btn {
+    color: white;
+    background-color: rgb(38, 73, 90);
+    border: none;
+    border-radius: 5%;
+    padding: 10px;
+    text-decoration:none;
+} 
+
+/* Media Querries */
+@media (max-width :732px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+}
